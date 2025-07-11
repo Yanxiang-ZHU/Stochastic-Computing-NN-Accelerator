@@ -1,0 +1,120 @@
+`include"disciplines.vams"
+`include"constants.vams"
+module STT-MTJ(p,n,Vstate);
+    input p,n;
+    output Vstate;
+    electrical p,n,Vstate;
+    // ===================== 模型参量初始化 ==============================  
+    parameter real e      = 1.6e-19;   // 电子电荷量, 1.6*10^-19C
+    parameter real m      = 9.1e-31;   // 电子质量, 9.1*10^-31kg
+    parameter real hbar   = 6.626e-34; // 约化普朗克常量
+    parameter real C      = 0.557;     // 欧拉常数
+    parameter real alpha  = 0.027;     // 吉尔伯特阻尼系数
+    parameter real ub     = 9.274e-24; // 波尔磁子常数, 9.274*10^-24J/T
+    parameter real Kb     = 1.38e-23;  // 玻尔兹曼常数, 1.38*10^-23J/K
+    parameter real P      = 0.52;      // 电子自旋极化率
+    parameter real tox    = 0.85e-9;   // 绝缘层MgO的厚度, 0.85nm
+    parameter real tfl    = 1.3e-9;    // 自由层厚度, 1.3nm
+    parameter real r      = 65e-9;     // MTJ半径,65nm 
+    parameter real F      = 332.2;     // R*A相关阻力系数,332.2
+    parameter real PhiBar = 0.4;       // 绝缘层MgO势垒高度, 0.4eV
+    parameter real TMR0   = 0.7;       // 零偏压下的TMR值, 0.7
+    parameter real Vh     = 0.5;       // TMRreal=0.5*TMR0时MTJ结上的电压,0.5V 
+    parameter real u0     = 1.2566e-6; // Permeability in free space.
+    parameter real Ms     = 456e3;     // 饱和磁化强度
+    parameter real Hk     = 113e3;     // 各向异性磁场强度
+    parameter real T      = 300;       // 温度, 300K
+    parameter real tau0   = 1.0e-9;    // 频率,1ns,1kHz
+    parameter real InitState = 0;      // 初始状态，P=0, AP=1 
+    
+    real Area;                         // 磁隧道结面积
+    real VF;                           // 自由层体积
+    real R0;                           // MTJ结偏压为零时的电阻值
+    real TMRreal;                      // MTJ上的实际TMR值
+    real Vmtj;                         // MTJ上的电压
+    real RP,RAP,Rreal;                 // MTJ上的电阻
+    real gamma;                        // 旋磁比
+    real gP,gAP;                       // 自旋极化效率因子
+    real IcP,IcAP;                     // 开关电流
+    real tau;                          // 翻转时间
+    real tauNB;                        // 数据保持时间
+    real E;                            // 
+    real Eps;                          // 热稳定系数
+    real Ireal,IrealAP,Imtj;           // MTJ上的实际电流
+    real width;                        // 脉冲宽度
+    real start;                        // 开始时间
+    integer state;
+        
+    analog begin 
+        @(initial_step)begin
+            Area  = `M_PI*r*r;
+            VF    = Area*tfl;
+            R0    = tox*exp(1.025*tox*sqrt(PhiBar))/(F*sqrt(PhiBar)*Area);
+            RP    = R0;
+            Rreal = RP;
+            gamma = 2*ub/hbar;
+            gP    = 1/(-4+pow(sqrt(P)+1/sqrt(p),3)*0.5);
+            gAP   = 1/(-4+pow(sqrt(P)+1/sqrt(p),3));
+            IcP   = alpha*gamma*e/(ub*gP)*u0*Ms*Hk*VF;
+            IcAP  = alpha*gamma*e/(ub*gAP)*u0*Ms*Hk*VF;
+            E     = u0*Ms*Hk*VF/2;
+            Eps   = E/(Kb*T);
+            state = InitState;
+            end
+            
+            Vmtj    = V(p,n);
+            Imtj    = Vmtj/Rreal;
+            TMRreal = TMR0/(1+Vmtj*Vmtj/(Vh*Vh));
+            RAP     = RP*(1+TMRreal);
+            
+            @(cross(Vmtj))begin
+                start = $abstime;
+            end
+            $bound_step(0.05ns);
+            
+            if(state==0)begin    //初始状态为“0”
+                Ireal = Imtj;   
+                Rreal = RP;     //MTJ磁化方向为平行态
+                if(Ireal>=0)begin             //有电流通过，记录电流脉冲宽度
+                    width = $abstime-start;
+                    if(Ireal>=IcP)begin      //通过的电流大于开关电流，计算翻转时间
+                        tau = (C/2+ln(`M_PI*`M_PI*Eps/4)/2)*e*Ms*Vol(1+P*P)/(2*ub*P*(Ireal-IcP));
+                        if(width>=tau)begin  //电流脉冲宽度大于翻转时间，则磁化状态翻转，否则不变
+                            state = 1;   
+                        end
+                        else state = 0;
+                    end
+                    else begin  //电流小于开关电流，计算保持时间
+                        tauNB = tau0*exp(Eps*(1-(Ireal/IcP)));
+                        if(width>=tauNB)begin //电流脉冲宽度大于保持时间，则磁化状态翻转，否则不变
+                        state = 1;
+                        end
+                        else state = 0;
+                    end
+                end
+            end
+            else begin //初始状态为“1”
+                IrealAP = -Imtj;
+                Rreal = RAP;
+                if(IrealAP>=0)begin
+                    width = $abstime-start;
+                    if(IrealAP>=IcAP)begin
+                        tau = (C/2+ln(`M_PI*`M_PI*Eps/4)/2)*e*Ms*VF(1+P*P)/(ub*P*(IrealAP-IcAP));
+                        if(width>=tau)begin
+                            state = 0;
+                        end
+                        else state = 1;
+                    end
+                    else begin
+                        tauNB = tau0*exp(Eps*(1-(IrealAP/IcAP)));
+                        if(width>=tauNB)begin
+                            state = 0;
+                        end
+                        else state = 1;
+                    end
+                end
+            end
+            V(Vstate) <+ state;
+            I(p,n) <+ Vmtj/Rreal;
+        end
+    endmodule

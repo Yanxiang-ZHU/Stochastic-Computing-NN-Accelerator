@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/39551/Desktop/Stochastic_Computing/SOBOL/SOBOL.srcs/sources_1/new/SOBOL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sobol_random
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/39551/Desktop/Stochastic_Computing/SOBOL/SOBOL.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sobol_random_tb

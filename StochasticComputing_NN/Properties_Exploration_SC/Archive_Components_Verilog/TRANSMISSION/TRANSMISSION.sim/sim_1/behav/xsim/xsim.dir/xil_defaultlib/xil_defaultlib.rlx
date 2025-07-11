@@ -1,0 +1,7 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.sim/sim_1/behav/xsim/glbl.v,1697210496,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sim_1/new/RX_tb.sv,1740484531,systemVerilog,,,,RX_tb,,uvm,,,,,,
+C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv,1740573141,systemVerilog,,C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sim_1/new/RX_tb.sv,,RX;single_rx;sobol_random,,uvm,,,,,,

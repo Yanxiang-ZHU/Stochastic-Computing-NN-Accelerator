@@ -1,0 +1,21 @@
+create_clock -period 20.000 -name clk [get_ports clk]
+
+set_property IOSTANDARD LVCMOS33 [get_ports clk]
+set_property IOSTANDARD LVCMOS33 [get_ports rst_n]
+set_property IOSTANDARD LVCMOS33 [get_ports pin]
+set_property IOSTANDARD LVCMOS33 [get_ports {result[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {result[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {result[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {result[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports tx]
+
+set_property PACKAGE_PIN R4 [get_ports clk]
+set_property PACKAGE_PIN T6 [get_ports rst_n]
+set_property PACKAGE_PIN E14 [get_ports pin]
+set_property PACKAGE_PIN V9 [get_ports {result[0]}]
+set_property PACKAGE_PIN Y8 [get_ports {result[1]}]
+set_property PACKAGE_PIN Y7 [get_ports {result[2]}]
+set_property PACKAGE_PIN W7 [get_ports {result[3]}]
+set_property PACKAGE_PIN D17 [get_ports tx]
+
+# set_property SLEW SLOW [get_ports tx]

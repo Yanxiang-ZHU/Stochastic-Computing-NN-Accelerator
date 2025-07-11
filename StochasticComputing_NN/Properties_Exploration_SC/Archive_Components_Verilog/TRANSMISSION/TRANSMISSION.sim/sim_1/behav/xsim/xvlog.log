@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RX
+INFO: [VRFC 10-311] analyzing module single_rx
+INFO: [VRFC 10-311] analyzing module sobol_random
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sim_1/new/RX_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RX_tb

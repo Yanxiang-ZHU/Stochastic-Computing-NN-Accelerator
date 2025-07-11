@@ -1,0 +1,13 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/39551/Desktop/学校文件/【3】Research  _FDU_/神经网络二值化FPGA/MNIST/verilog code/test_neuron.sim/sim_1/behav/xsim/glbl.v,1697210496,verilog,,,,glbl,,,,,,,,
+C:/Users/39551/Desktop/学校文件/【3】Research  _FDU_/神经网络二值化FPGA/MNIST/verilog code/test_neuron.srcs/sim_1/new/test_sim.v,1721813206,verilog,,,,test_sim,,,,,,,,
+C:/Users/39551/Desktop/学校文件/【3】Research  _FDU_/神经网络二值化FPGA/MNIST/verilog code/test_neuron.srcs/sources_1/imports/new/adder192.v,1720620686,verilog,,C:/Users/39551/Desktop/学校文件/【3】Research  _FDU_/神经网络二值化FPGA/MNIST/verilog code/test_neuron.srcs/sources_1/imports/new/mac191.v,,adder_192,,,,,,,,
+C:/Users/39551/Desktop/学校文件/【3】Research  _FDU_/神经网络二值化FPGA/MNIST/verilog code/test_neuron.srcs/sources_1/imports/new/mac191.v,1720620890,verilog,,C:/Users/39551/Desktop/学校文件/【3】Research  _FDU_/神经网络二值化FPGA/MNIST/verilog code/test_neuron.srcs/sources_1/new/rx.v,,mac191,,,,,,,,
+C:/Users/39551/Desktop/学校文件/【3】Research  _FDU_/神经网络二值化FPGA/MNIST/verilog code/test_neuron.srcs/sources_1/new/rx.v,1725019307,verilog,,C:/Users/39551/Desktop/学校文件/【3】Research  _FDU_/神经网络二值化FPGA/MNIST/verilog code/test_neuron.srcs/sources_1/new/simple_neuron_plus.v,,rx,,,,,,,,
+C:/Users/39551/Desktop/学校文件/【3】Research  _FDU_/神经网络二值化FPGA/MNIST/verilog code/test_neuron.srcs/sources_1/new/simple_neuron_plus.v,1720699867,verilog,,C:/Users/39551/Desktop/学校文件/【3】Research  _FDU_/神经网络二值化FPGA/MNIST/verilog code/test_neuron.srcs/sources_1/new/single_rx.v,,simple_neuron_plus,,,,,,,,
+C:/Users/39551/Desktop/学校文件/【3】Research  _FDU_/神经网络二值化FPGA/MNIST/verilog code/test_neuron.srcs/sources_1/new/single_rx.v,1721790440,verilog,,C:/Users/39551/Desktop/学校文件/【3】Research  _FDU_/神经网络二值化FPGA/MNIST/verilog code/test_neuron.srcs/sources_1/new/test_top.v,,single_rx,,,,,,,,
+C:/Users/39551/Desktop/学校文件/【3】Research  _FDU_/神经网络二值化FPGA/MNIST/verilog code/test_neuron.srcs/sources_1/new/test_top.v,1722080802,verilog,,C:/Users/39551/Desktop/学校文件/【3】Research  _FDU_/神经网络二值化FPGA/MNIST/verilog code/test_neuron.srcs/sources_1/new/tx.v,,test_top,,,,,,,,
+C:/Users/39551/Desktop/学校文件/【3】Research  _FDU_/神经网络二值化FPGA/MNIST/verilog code/test_neuron.srcs/sources_1/new/tx.v,1726651327,verilog,,C:/Users/39551/Desktop/学校文件/【3】Research  _FDU_/神经网络二值化FPGA/MNIST/verilog code/test_neuron.srcs/sim_1/new/test_sim.v,,tx,,,,,,,,

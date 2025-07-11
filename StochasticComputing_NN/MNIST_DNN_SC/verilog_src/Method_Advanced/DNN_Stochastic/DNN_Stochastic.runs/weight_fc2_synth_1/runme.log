@@ -1,0 +1,345 @@
+
+*** Running vivado
+    with args -log weight_fc2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source weight_fc2.tcl
+
+
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source weight_fc2.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: weight_fc2
+Command: synth_design -top weight_fc2 -part xc7a200tfbg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19892
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1389.836 ; gain = 439.129
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'weight_fc2' [c:/Users/39551/Desktop/Stochastic-Computing-for-MNIST/DNN-like Structure/DNN_Stochastic/DNN_Stochastic.gen/sources_1/ip/weight_fc2/synth/weight_fc2.vhd:66]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 6576 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: no_coe_file_loaded - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 0 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 128 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_14' declared at 'c:/Users/39551/Desktop/Stochastic-Computing-for-MNIST/DNN-like Structure/DNN_Stochastic/DNN_Stochastic.gen/sources_1/ip/weight_fc2/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3191' bound to instance 'U0' of component 'dist_mem_gen_v8_0_14' [c:/Users/39551/Desktop/Stochastic-Computing-for-MNIST/DNN-like Structure/DNN_Stochastic/DNN_Stochastic.gen/sources_1/ip/weight_fc2/synth/weight_fc2.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'weight_fc2' (0#1) [c:/Users/39551/Desktop/Stochastic-Computing-for-MNIST/DNN-like Structure/DNN_Stochastic/DNN_Stochastic.gen/sources_1/ip/weight_fc2/synth/weight_fc2.vhd:66]
+WARNING: [Synth 8-7129] Port qspo[127] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[126] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[125] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[124] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[123] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[122] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[121] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[120] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[119] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[118] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[117] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[116] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[115] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[114] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[113] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[112] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[111] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[110] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[109] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[108] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[107] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[106] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[105] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[104] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[103] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[102] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[101] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[100] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[99] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[98] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[97] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[96] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[95] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[94] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[93] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[92] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[91] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[90] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[89] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[88] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[87] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[86] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[85] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[84] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[83] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[82] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[81] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[80] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[79] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[78] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[77] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[76] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[75] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[74] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[73] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[72] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[71] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[70] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[69] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[68] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[67] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[66] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[65] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[64] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[63] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[62] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[61] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[60] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[59] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[58] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[57] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[56] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[55] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[54] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[53] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[52] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[51] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[50] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[49] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[48] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[47] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[46] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[45] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[44] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[43] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[42] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[41] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[40] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[39] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[38] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[37] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[36] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[35] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[34] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[33] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[32] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[31] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[30] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[29] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[28] in module rom is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1527.199 ; gain = 576.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1527.199 ; gain = 576.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1527.199 ; gain = 576.492
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1527.199 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/39551/Desktop/Stochastic-Computing-for-MNIST/DNN-like Structure/DNN_Stochastic/DNN_Stochastic.gen/sources_1/ip/weight_fc2/weight_fc2_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/39551/Desktop/Stochastic-Computing-for-MNIST/DNN-like Structure/DNN_Stochastic/DNN_Stochastic.gen/sources_1/ip/weight_fc2/weight_fc2_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/39551/Desktop/Stochastic-Computing-for-MNIST/DNN-like Structure/DNN_Stochastic/DNN_Stochastic.runs/weight_fc2_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/39551/Desktop/Stochastic-Computing-for-MNIST/DNN-like Structure/DNN_Stochastic/DNN_Stochastic.runs/weight_fc2_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1540.262 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+系统找不到指定的路径。
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1540.262 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 1540.262 ; gain = 589.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 1540.262 ; gain = 589.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  {C:/Users/39551/Desktop/Stochastic-Computing-for-MNIST/DNN-like Structure/DNN_Stochastic/DNN_Stochastic.runs/weight_fc2_synth_1/dont_touch.xdc}, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 1540.262 ; gain = 589.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 1540.262 ; gain = 589.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1540.262 ; gain = 589.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3321] create_clock attempting to set clock on an unknown port/pin for constraint at line 53 of {c:/Users/39551/Desktop/Stochastic-Computing-for-MNIST/DNN-like Structure/DNN_Stochastic/DNN_Stochastic.gen/sources_1/ip/weight_fc2/weight_fc2_ooc.xdc}. [{c:/Users/39551/Desktop/Stochastic-Computing-for-MNIST/DNN-like Structure/DNN_Stochastic/DNN_Stochastic.gen/sources_1/ip/weight_fc2/weight_fc2_ooc.xdc}:53]
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 1540.262 ; gain = 589.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 1540.262 ; gain = 589.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 1540.262 ; gain = 589.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 1540.262 ; gain = 589.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 1540.262 ; gain = 589.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 1540.262 ; gain = 589.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 1540.262 ; gain = 589.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 1540.262 ; gain = 589.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 1540.262 ; gain = 589.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 1540.262 ; gain = 589.555
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 549 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 1540.262 ; gain = 576.492
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 1540.262 ; gain = 589.555
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1540.262 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1540.262 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+系统找不到指定的路径。
+Synth Design complete | Checksum: 226e08fc
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 101 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Common 17-1381] The checkpoint 'C:/Users/39551/Desktop/Stochastic-Computing-for-MNIST/DNN-like Structure/DNN_Stochastic/DNN_Stochastic.runs/weight_fc2_synth_1/weight_fc2.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/39551/Desktop/Stochastic-Computing-for-MNIST/DNN-like Structure/DNN_Stochastic/DNN_Stochastic.runs/weight_fc2_synth_1/weight_fc2.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file weight_fc2_utilization_synth.rpt -pb weight_fc2_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 29 15:50:51 2025...

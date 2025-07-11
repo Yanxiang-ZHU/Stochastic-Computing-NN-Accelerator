@@ -1,0 +1,396 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Feb 27 23:24:19 2025
+# Process ID: 20396
+# Current directory: C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.runs/synth_1
+# Command line: vivado.exe -log CNN_TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CNN_TOP.tcl
+# Log file: C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.runs/synth_1/CNN_TOP.vds
+# Journal file: C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.runs/synth_1\vivado.jou
+# Running On: YanX, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 16885 MB
+#-----------------------------------------------------------
+source CNN_TOP.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 492.719 ; gain = 182.129
+Command: synth_design -top CNN_TOP -part xc7a200tfbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23076
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1390.250 ; gain = 439.590
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'rx_done', assumed default net type 'wire' [C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.srcs/sources_1/new/CNN_TOP.sv:37]
+INFO: [Synth 8-11241] undeclared symbol 'cnn_done', assumed default net type 'wire' [C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.srcs/sources_1/new/CNN_TOP.sv:47]
+INFO: [Synth 8-11241] undeclared symbol 'tx_done', assumed default net type 'wire' [C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.srcs/sources_1/new/CNN_TOP.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'CNN_TOP' [C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.srcs/sources_1/new/CNN_TOP.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'RX' [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:8]
+	Parameter LENTH bound to: 100 - type: integer 
+	Parameter SIZE bound to: 784 - type: integer 
+	Parameter BAUD bound to: 9600 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'single_rx' [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:141]
+	Parameter BAUD bound to: 9600 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'single_rx' (0#1) [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:141]
+INFO: [Synth 8-6157] synthesizing module 'sobol_random' [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:243]
+	Parameter SAMPLES bound to: 100 - type: integer 
+	Parameter SET_INDEX bound to: 1000 - type: integer 
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+WARNING: [Synth 8-6104] Input port 'n' has an internal driver [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:299]
+INFO: [Synth 8-6155] done synthesizing module 'sobol_random' (0#1) [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:243]
+INFO: [Synth 8-6155] done synthesizing module 'RX' (0#1) [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'CNN' [C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.srcs/sources_1/new/CNN.sv:3]
+	Parameter LENTH bound to: 100 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'kernel' [C:/Users/39551/Desktop/Stochastic_Computing/KERNEL_binary/KERNEL_binary.srcs/sources_1/new/kernel.sv:3]
+	Parameter LENTH bound to: 100 - type: integer 
+WARNING: [Synth 8-6090] variable 'j' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/39551/Desktop/Stochastic_Computing/KERNEL_binary/KERNEL_binary.srcs/sources_1/new/kernel.sv:68]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/39551/Desktop/Stochastic_Computing/KERNEL_binary/KERNEL_binary.srcs/sources_1/new/kernel.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'kernel' (0#1) [C:/Users/39551/Desktop/Stochastic_Computing/KERNEL_binary/KERNEL_binary.srcs/sources_1/new/kernel.sv:3]
+INFO: [Synth 8-3876] $readmem data file 'conv_weight.mem' is read successfully [C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.srcs/sources_1/new/CNN.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'bram_fcweight' [C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.runs/synth_1/.Xil/Vivado-20396-YanX/realtime/bram_fcweight_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bram_fcweight' (0#1) [C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.runs/synth_1/.Xil/Vivado-20396-YanX/realtime/bram_fcweight_stub.v:6]
+WARNING: [Synth 8-7071] port 'ena' of module 'bram_fcweight' is unconnected for instance 'u_fc_weight' [C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.srcs/sources_1/new/CNN.sv:49]
+WARNING: [Synth 8-7023] instance 'u_fc_weight' of module 'bram_fcweight' has 4 connections declared, but only 3 given [C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.srcs/sources_1/new/CNN.sv:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.srcs/sources_1/new/CNN.sv:66]
+INFO: [Synth 8-6155] done synthesizing module 'CNN' (0#1) [C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.srcs/sources_1/new/CNN.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'TX' [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/TX.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'TX' (0#1) [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/TX.sv:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.srcs/sources_1/new/CNN_TOP.sv:98]
+INFO: [Synth 8-6155] done synthesizing module 'CNN_TOP' (0#1) [C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.srcs/sources_1/new/CNN_TOP.sv:3]
+WARNING: [Synth 8-6014] Unused sequential element column_reg was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:311]
+WARNING: [Synth 8-6014] Unused sequential element sample_reg was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:316]
+WARNING: [Synth 8-6014] Unused sequential element gray_index_reg was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:317]
+WARNING: [Synth 8-6014] Unused sequential element tz_reg was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:329]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[128] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[129] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[130] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[131] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[132] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[133] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[134] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[135] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[136] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[137] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[138] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[139] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[140] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[141] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[142] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[143] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[144] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[145] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[146] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[147] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[148] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[149] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[150] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[151] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[152] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[153] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[154] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[155] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[156] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[157] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[158] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[159] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[160] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[161] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[162] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[163] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[164] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[165] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[166] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[167] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[168] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[169] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[170] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[171] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[172] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[173] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[174] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[175] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[176] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[177] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[178] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[179] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[180] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[181] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[182] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[183] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[184] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[185] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[186] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[187] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[188] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[189] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[190] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[191] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[192] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[193] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[194] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[195] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[196] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[197] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[198] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[199] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[200] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[201] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[202] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[203] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[204] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[205] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[206] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[207] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[208] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[209] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[210] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[211] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[212] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[213] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[214] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[215] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[216] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[217] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[218] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[219] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[220] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[221] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[222] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element fp_fig_reg[223] was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7137] Register fp_fig_reg[0] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[1] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[2] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[3] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[4] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[5] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[6] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[7] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[8] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[9] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[10] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[11] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[12] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[13] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[14] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[15] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[16] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[17] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[18] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[19] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[20] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[21] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[22] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[23] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[24] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[25] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[26] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[27] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[28] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[29] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[30] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[31] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[32] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[33] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[34] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[35] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[36] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[37] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[38] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[39] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[40] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[41] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[42] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[43] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[44] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[45] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[46] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[47] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[48] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[49] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[50] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[51] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[52] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[53] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[54] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[55] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[56] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[57] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[58] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[59] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[60] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[61] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[62] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[63] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[64] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[65] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[66] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[67] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[68] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[69] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[70] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[71] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[72] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[73] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[74] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[75] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[76] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[77] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[78] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[79] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[80] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[81] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[82] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[83] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[84] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[85] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[86] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[87] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[88] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[89] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[90] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[91] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[92] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[93] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[94] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[95] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[96] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[97] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[98] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+WARNING: [Synth 8-7137] Register fp_fig_reg[99] in module RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/RX.sv:74]
+INFO: [Common 17-14] Message 'Synth 8-7137' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-11357] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  fc_out_reg with 32000 registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'conv_out_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "conv_out_reg" dissolved into registers
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:52 ; elapsed = 00:15:47 . Memory (MB): peak = 19481.688 ; gain = 18531.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:13 ; elapsed = 00:16:51 . Memory (MB): peak = 19481.688 ; gain = 18531.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:13 ; elapsed = 00:16:51 . Memory (MB): peak = 19481.688 ; gain = 18531.027
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:02:41 ; elapsed = 00:06:50 . Memory (MB): peak = 23917.957 ; gain = 139.441
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.gen/sources_1/ip/bram_fcweight_1/bram_fcweight/bram_fcweight_in_context.xdc] for cell 'u_CNN/u_fc_weight'
+Finished Parsing XDC File [c:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.gen/sources_1/ip/bram_fcweight_1/bram_fcweight/bram_fcweight_in_context.xdc] for cell 'u_CNN/u_fc_weight'
+Parsing XDC File [C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-180] No cells matched 'u_bram_fc_weight'. [C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.srcs/constrs_1/new/constraints.xdc:1]
+CRITICAL WARNING: [Designutils 20-1307] Command 'set_param' is not supported in the xdc constraint file. [C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.srcs/constrs_1/new/constraints.xdc:2]
+Finished Parsing XDC File [C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/39551/Desktop/Stochastic_Computing/CNN/CNN.srcs/constrs_1/new/constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/CNN_TOP_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+write_xdc: Time (s): cpu = 00:00:05 ; elapsed = 00:02:16 . Memory (MB): peak = 33971.059 ; gain = 2.223
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 33971.059 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+write_xdc: Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 33971.059 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 33971.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:26:17 ; elapsed = 01:55:56 . Memory (MB): peak = 34892.871 ; gain = 33942.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:26:17 ; elapsed = 01:55:56 . Memory (MB): peak = 34892.871 ; gain = 33942.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for u_CNN/u_fc_weight. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:26:19 ; elapsed = 01:55:59 . Memory (MB): peak = 34892.871 ; gain = 33942.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'RX'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'kernel'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'CNN'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'CNN_TOP'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_INIT |                               00 |                               00
+             STATE_TRANS |                               01 |                               11
+               STATE_MID |                               10 |                               01
+               STATE_RDY |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'RX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+          XNOR_OPERATION |                              010 |                               01
+           MAJORITY_GATE |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'kernel'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_INIT |                              000 |                              000
+              STATE_CONV |                              001 |                              001
+                STATE_FC |                              010 |                              010
+           STATE_FC_WAIT |                              011 |                              011
+              STATE_COMP |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'CNN'
+WARNING: [Synth 8-327] inferring latch for variable 'r_next_state_reg' [C:/Users/39551/Desktop/Stochastic_Computing/TRANSMISSION/TRANSMISSION.srcs/sources_1/new/TX.sv:65]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+               RECEIVING |                              001 |                              001
+              PROCESSING |                              010 |                              010
+            TRANSMITTING |                              011 |                              011
+                 WAIT_TX |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'CNN_TOP'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 04:29:59 ; elapsed = 08:49:03 . Memory (MB): peak = 34892.871 ; gain = 33942.211
+---------------------------------------------------------------------------------

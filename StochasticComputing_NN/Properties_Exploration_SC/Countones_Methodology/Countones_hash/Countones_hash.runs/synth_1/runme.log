@@ -1,0 +1,304 @@
+
+*** Running vivado
+    with args -log hash.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hash.tcl
+
+
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source hash.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 494.523 ; gain = 182.328
+Command: read_checkpoint -auto_incremental -incremental C:/Users/39551/Desktop/Stochastic_Computing/Countones_hash/Countones_hash.srcs/utils_1/imports/synth_1/hash.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/39551/Desktop/Stochastic_Computing/Countones_hash/Countones_hash.srcs/utils_1/imports/synth_1/hash.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top hash -part xc7a200tfbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 133204
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 943.719 ; gain = 441.184
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'hash' [C:/Users/39551/Desktop/Stochastic_Computing/Countones_hash/Countones_hash.srcs/sources_1/new/hash.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'hash' (0#1) [C:/Users/39551/Desktop/Stochastic_Computing/Countones_hash/Countones_hash.srcs/sources_1/new/hash.v:3]
+WARNING: [Synth 8-6014] Unused sequential element temp_count_reg was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/Countones_hash/Countones_hash.srcs/sources_1/new/hash.v:25]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 2024.402 ; gain = 1521.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 2024.402 ; gain = 1521.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 2024.402 ; gain = 1521.867
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 2024.402 ; gain = 1521.867
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	 196 Input   10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[255][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[254][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[253][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[252][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[251][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[250][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[249][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[248][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[247][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[246][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[245][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[244][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[243][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[242][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[241][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[240][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[239][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[238][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[237][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[236][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[235][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[234][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[233][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[232][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[231][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[230][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[229][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[228][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[227][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[226][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[225][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[224][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[223][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[222][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[221][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[220][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[219][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[218][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[217][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[216][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[215][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[214][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[213][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[212][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[211][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[210][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[209][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[208][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[207][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[206][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[205][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[204][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[203][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[202][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[201][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[200][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[199][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[198][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[197][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[196][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[195][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[194][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[193][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[192][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[191][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[190][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[189][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[188][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[187][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[186][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[185][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[184][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[183][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[182][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[181][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[180][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[179][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[178][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[177][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[176][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[175][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[174][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[173][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[172][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[171][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[170][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[169][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[168][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[167][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[166][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[165][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[164][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[163][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[162][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[161][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[160][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[159][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[158][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\poptable_reg[157][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poptable_reg[156][0] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:08 ; elapsed = 00:04:33 . Memory (MB): peak = 2024.402 ; gain = 1521.867
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:13 ; elapsed = 00:04:46 . Memory (MB): peak = 2024.402 ; gain = 1521.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:14 ; elapsed = 00:04:49 . Memory (MB): peak = 2024.402 ; gain = 1521.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:18 ; elapsed = 00:04:55 . Memory (MB): peak = 2024.402 ; gain = 1521.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:18 ; elapsed = 00:04:55 . Memory (MB): peak = 2024.402 ; gain = 1521.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:18 ; elapsed = 00:04:55 . Memory (MB): peak = 2024.402 ; gain = 1521.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:18 ; elapsed = 00:04:55 . Memory (MB): peak = 2024.402 ; gain = 1521.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:18 ; elapsed = 00:04:55 . Memory (MB): peak = 2024.402 ; gain = 1521.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:18 ; elapsed = 00:04:55 . Memory (MB): peak = 2024.402 ; gain = 1521.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   291|
+|3     |LUT1   |     1|
+|4     |LUT2   |     4|
+|5     |LUT3   |   495|
+|6     |LUT4   |   760|
+|7     |LUT5   |   605|
+|8     |LUT6   |  1713|
+|9     |FDCE   |    10|
+|10    |IBUF   |  1570|
+|11    |OBUF   |    10|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  5460|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:18 ; elapsed = 00:04:55 . Memory (MB): peak = 2024.402 ; gain = 1521.867
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:18 ; elapsed = 00:04:58 . Memory (MB): peak = 2024.402 ; gain = 1521.867
+Synthesis Optimization Complete : Time (s): cpu = 00:02:18 ; elapsed = 00:04:58 . Memory (MB): peak = 2024.402 ; gain = 1521.867
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 2024.402 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 291 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'hash' is not ideal for floorplanning, since the cellview 'hash' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2024.402 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+系统找不到指定的路径。
+Synth Design complete | Checksum: 3d36e7a8
+INFO: [Common 17-83] Releasing license: Synthesis
+120 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:21 ; elapsed = 00:05:03 . Memory (MB): peak = 2024.402 ; gain = 1527.875
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 2024.402 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/39551/Desktop/Stochastic_Computing/Countones_hash/Countones_hash.runs/synth_1/hash.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file hash_utilization_synth.rpt -pb hash_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  4 23:30:57 2024...

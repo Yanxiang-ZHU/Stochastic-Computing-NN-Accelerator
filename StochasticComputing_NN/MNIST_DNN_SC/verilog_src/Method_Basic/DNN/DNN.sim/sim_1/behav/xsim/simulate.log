@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+$finish called at time : 60015 ns : File "C:/Users/39551/Desktop/Stochastic_Computing/DNN/DNN.srcs/sim_1/new/DNN_tb.sv" Line 64
+INFO: xsimkernel Simulation Memory Usage: 17548 KB (Peak: 17548 KB), Simulation CPU Usage: 288687 ms

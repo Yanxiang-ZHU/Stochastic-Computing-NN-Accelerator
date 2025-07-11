@@ -1,0 +1,506 @@
+
+*** Running vivado
+    with args -log CountOnes.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CountOnes.tcl
+
+
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source CountOnes.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 492.215 ; gain = 178.891
+Command: read_checkpoint -auto_incremental -incremental C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/utils_1/imports/synth_1/CountOnes.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/utils_1/imports/synth_1/CountOnes.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top CountOnes -part xc7a200tfbg484-1 -sfcu
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 130624
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 942.285 ; gain = 437.578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CountOnes' [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:3]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:24]
+INFO: [Common 17-14] Message 'Synth 8-311' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'CountOnes' (0#1) [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:3]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:39]
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+WARNING: [Synth 8-3848] Net rotated_Vector in module/entity CountOnes does not have driver. [C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.srcs/sources_1/new/Countones.v:17]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port bitVector[0][127] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][126] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][125] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][124] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][123] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][122] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][121] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][120] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][119] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][118] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][117] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][116] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][115] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][114] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][113] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][112] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][111] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][110] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][109] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][108] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][107] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][106] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][105] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][104] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][103] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][102] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][101] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][100] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][99] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][98] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][97] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][96] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][95] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][94] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][93] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][92] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][91] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][90] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][89] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][88] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][87] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][86] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][85] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][84] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][83] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][82] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][81] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][80] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][79] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][78] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][77] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][76] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][75] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][74] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][73] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][72] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][71] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][70] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][69] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][68] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][67] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][66] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][65] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][64] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][63] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][62] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][61] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][60] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][59] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][58] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][57] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][56] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][55] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][54] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][53] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][52] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][51] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][50] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][49] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][48] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][47] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][46] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][45] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][44] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][43] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][42] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][41] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][40] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][39] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][38] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][37] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][36] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][35] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][34] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][33] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][32] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][31] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][30] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][29] in module CountOnes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bitVector[0][28] in module CountOnes is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:22 ; elapsed = 00:00:38 . Memory (MB): peak = 1119.727 ; gain = 615.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:39 . Memory (MB): peak = 1119.727 ; gain = 615.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:39 . Memory (MB): peak = 1119.727 ; gain = 615.020
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:41 . Memory (MB): peak = 1119.727 ; gain = 615.020
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	  66 Input    8 Bit       Adders := 1     
+	  65 Input    7 Bit       Adders := 1     
+	  33 Input    6 Bit       Adders := 1     
+	  17 Input    5 Bit       Adders := 1     
+	   9 Input    4 Bit       Adders := 1     
+	   5 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
+	   3 Input    2 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 2     
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:01:08 . Memory (MB): peak = 1304.238 ; gain = 799.531
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:01:08 . Memory (MB): peak = 1312.258 ; gain = 807.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:01:08 . Memory (MB): peak = 1312.258 ; gain = 807.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:01:15 . Memory (MB): peak = 1312.258 ; gain = 807.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:01:15 . Memory (MB): peak = 1312.258 ; gain = 807.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:01:16 . Memory (MB): peak = 1312.258 ; gain = 807.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:01:16 . Memory (MB): peak = 1312.258 ; gain = 807.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:01:16 . Memory (MB): peak = 1312.258 ; gain = 807.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:01:16 . Memory (MB): peak = 1312.258 ; gain = 807.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |   128|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   128|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:01:16 . Memory (MB): peak = 1312.258 ; gain = 807.551
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 73859 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:01:16 . Memory (MB): peak = 1312.258 ; gain = 807.551
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:01:16 . Memory (MB): peak = 1312.258 ; gain = 807.551
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1324.293 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1420.426 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+系统找不到指定的路径。
+Synth Design complete | Checksum: 15c7d77d
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 303 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:01:22 . Memory (MB): peak = 1420.426 ; gain = 924.234
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1420.426 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/39551/Desktop/Stochastic_Computing/Countones_v/Countones_v.runs/synth_1/CountOnes.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CountOnes_utilization_synth.rpt -pb CountOnes_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  4 20:17:31 2024...

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="DNN_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="DNN_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="30,394.166 ns"></ZoomStartTime>
+      <ZoomEndTime time="31,439.167 ns"></ZoomEndTime>
+      <Cursor1Time time="31,265.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="128"></NameColumnWidth>
+      <ValueColumnWidth column_width="153"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/DNN_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNN_tb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNN_tb/input_val" type="array">
+      <obj_property name="ElementShortName">input_val[0:49][255:0]</obj_property>
+      <obj_property name="ObjectShortName">input_val[0:49][255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNN_tb/output_val" type="array">
+      <obj_property name="ElementShortName">output_val[3:0]</obj_property>
+      <obj_property name="ObjectShortName">output_val[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNN_tb/flag" type="logic">
+      <obj_property name="ElementShortName">flag</obj_property>
+      <obj_property name="ObjectShortName">flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNN_tb/input_file" type="array">
+      <obj_property name="ElementShortName">input_file[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input_file[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNN_tb/result_file" type="array">
+      <obj_property name="ElementShortName">result_file[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result_file[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNN_tb/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNN_tb/j" type="array">
+      <obj_property name="ElementShortName">j[31:0]</obj_property>
+      <obj_property name="ObjectShortName">j[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNN_tb/temp_data" type="array">
+      <obj_property name="ElementShortName">temp_data[255:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_data[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNN_tb/LENTH" type="array">
+      <obj_property name="ElementShortName">LENTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">LENTH[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,2 @@
+acc_float.v,verilog,xil_defaultlib,../../../../CIFAR10_UART.gen/sources_1/ip/acc_float/sim/acc_float.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
